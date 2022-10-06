@@ -5,6 +5,7 @@ import Layout from '@layouts/Layout.astro'
 import Card from '@components/Card.astro'
 
 import logo from '/favicon.svg'
+import Counter from '@components/counter'
 ---
 
 <Layout title='Welcome to Astro.'>
@@ -30,6 +31,9 @@ import logo from '/favicon.svg'
 			/>
 			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
 		</p>
+
+		<Counter client:idle />
+
 		<ul role='list' class='link-card-grid'>
 			<Card
 				href='https://docs.astro.build/'
