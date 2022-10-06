@@ -6,4 +6,6 @@ module.exports = {
 	singleQuote: true,
 	bracketSpacing: false,
 	jsxSingleQuote: true,
+	plugins: [require('prettier-plugin-tailwindcss')],
+	tailwindConfig: './tailwind.config.cjs',
 }
