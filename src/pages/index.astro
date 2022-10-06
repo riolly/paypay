@@ -1,4 +1,6 @@
 ---
+import {Image} from '@astrojs/image/components'
+
 import Layout from '@layouts/Layout.astro'
 import Card from '@components/Card.astro'
 
@@ -11,7 +13,13 @@ import logo from '/favicon.svg'
 			<h1>
 				Welcome to
 				<span class='text-gradient'>
-					<img src={logo} alt='a' width='72px' class='inline -ml-4 -mr-7' />
+					<Image
+						src={logo}
+						alt='a'
+						width='72px'
+						class='inline -ml-4 -mr-7'
+						aspectRatio='1'
+					/>
 					stro
 				</span>
 			</h1>
