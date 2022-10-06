@@ -33,6 +33,12 @@ module.exports = {
       },
     },
     {
+      files: ['*.tsx'],
+      parser: '@typescript-eslint/parser',
+      plugins: ['solid'],
+      extends: ['plugin:solid/typescript'],
+    },
+    {
       // Define the configuration for `<script>` tag.
       // Script in `<script>` is assigned a virtual file name with the `.js` extension.
       files: ['**/*.astro/*.js', '*.astro/*.js'],
